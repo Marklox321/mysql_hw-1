@@ -38,7 +38,6 @@ FROM movies
 GROUP BY company_id
 ORDER BY SUM(budget) DESC
 LIMIT 1;
--- Второй запрос
 SELECT title, genres.name AS 'Жанр'
 FROM movies
 JOIN genres ON movies.genre_id = genres.id
