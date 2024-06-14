@@ -54,4 +54,4 @@ JOIN genres ON movies.genre_id = genres.id
 GROUP BY genres.name;
 -- Задание 10 Найти и удалить комедию "Дикие истории" 2014-го года
 DELETE FROM movies
-WHERE title = 'Дикие истории' AND year = 2014;
+WHERE title = 'Дикие истории' AND year = 2014 and genre = 'комедия';
